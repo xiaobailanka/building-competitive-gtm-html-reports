@@ -1,0 +1,4 @@
+interface:
+  display_name: "竞品分析与 GTM HTML 报告"
+  short_description: "基于可追溯来源完成竞品判断、卖点定位、渠道转化与 GTM 单文件 HTML 报告"
+  default_prompt: "使用 $building-competitive-gtm-html-reports，分析我的产品与直接竞品在目标市场的上市定位和转化机会，输出有来源、运营动作及 KPI 的单文件 HTML 报告。"

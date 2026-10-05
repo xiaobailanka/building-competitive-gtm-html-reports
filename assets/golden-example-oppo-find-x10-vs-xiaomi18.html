@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OPPO Find X10 系列 vs 小米 18 Pro 系列｜新品上市竞品分析与卖点定位</title>
+<style>
+:root{
+  --bg:#f7f6f3; --paper:#ffffff; --text:#171918; --muted:#6e7472; --line:#e9e6e1;
+  --oppo:#168a72; --oppo2:#0f6f5d; --mi:#e97031; --mi2:#bd5524;
+  --pink:#d94c78; --blue:#3d7fb2; --purple:#8066b2; --gold:#ad7b12;
+  --soft-oppo:#e6f4f0; --soft-mi:#fff0e7; --soft-pink:#fbecf1; --soft-blue:#eaf2fb; --soft-gold:#fff4cd;
+  --shadow:0 12px 34px rgba(32,35,34,.07); --radius:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.72}
+a{color:inherit}
+.ribbon{height:12px;background:linear-gradient(90deg,#d84e75 0 22%,#f4d9e3 22% 45%,#32887c 45% 70%,#e99362 70% 100%)}
+.container{width:min(1180px,calc(100% - 36px));margin:0 auto}
+.hero{background:#fff;padding:64px 0 52px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-130px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#e7f5f1 0%,rgba(231,245,241,.2) 53%,transparent 70%)}
+.hero:after{content:"";position:absolute;left:-180px;bottom:-240px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#fff0e8 0%,rgba(255,240,232,.25) 50%,transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:44px;align-items:end;position:relative;z-index:1}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:800;color:var(--pink);letter-spacing:.08em}
+.eyebrow:before{content:"新品上市 / GTM";padding:7px 14px;border-radius:999px;background:var(--soft-pink);letter-spacing:0}
+h1{font-family:"Songti SC","STSong","Noto Serif CJK SC",serif;font-size:clamp(36px,5.2vw,62px);line-height:1.08;margin:22px 0 18px;font-weight:800;letter-spacing:-.02em;max-width:900px}
+.hero p{max-width:850px;color:#646967;font-size:17px;margin:0 0 22px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:13px;color:#4f5653;box-shadow:0 4px 16px rgba(0,0,0,.035)}
+.hero-side{background:#faf9f7;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.hero-side .snapshot{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.hero-side h3{font-size:18px;margin:8px 0 12px}
+.hero-side .pair{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed #ddd9d1;font-size:14px}
+.hero-side .pair:last-child{border-bottom:0}
+.hero-side .pair b{color:var(--oppo2)}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;gap:7px;overflow:auto;padding:10px 0;scrollbar-width:none}.nav-inner::-webkit-scrollbar{display:none}
+.nav-inner a{text-decoration:none;padding:8px 11px;border-radius:9px;white-space:nowrap;font-size:13px;color:#59605d}
+.nav-inner a:hover,.nav-inner a.active{background:#edf5f2;color:var(--oppo2)}
+main{padding:38px 0 90px}
+section{scroll-margin-top:70px;margin-bottom:30px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.section-card{padding:30px}
+.kicker{font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:6px}
+h2{font-family:"Songti SC","STSong","Noto Serif CJK SC",serif;font-size:30px;line-height:1.2;margin:0 0 9px}
+h3{font-size:20px;margin:24px 0 10px} h4{margin:0 0 7px;font-size:17px}
+.sub{color:var(--muted);margin:0 0 22px}
+.leadbox{padding:20px 22px;border-radius:16px;background:linear-gradient(90deg,var(--soft-oppo),#eef4fb);border:1px solid #dce7e2;font-size:17px;font-weight:720}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.metric{padding:20px}.metric .num{font-size:36px;line-height:1;font-weight:850}.metric .label{margin-top:8px;font-size:13px;color:var(--muted)}.metric .src{margin-top:8px;font-size:11px;color:#8a918e}
+.metric.oppo .num{color:var(--oppo2)}.metric.mi .num{color:var(--mi2)}.metric.blue .num{color:var(--blue)}.metric.pink .num{color:var(--pink)}
+.scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.scope{padding:19px;border-top:4px solid var(--pink)}.scope:nth-child(2){border-top-color:var(--oppo)}.scope:nth-child(3){border-top-color:var(--blue)}
+.scope p{margin:0;color:var(--muted);font-size:14px}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:11px;font-weight:850}
+.b-a{background:var(--soft-oppo);color:var(--oppo2)}.b-b{background:var(--soft-blue);color:#285f8f}.b-c{background:var(--soft-gold);color:#8b650d}.b-infer{background:#f2eef9;color:#694d9b}.b-risk{background:#fff0ee;color:#b44834}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:15px}
+table{width:100%;border-collapse:collapse;min-width:900px;background:#fff}
+th,td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:13px}
+th{background:#f8f7f4;font-weight:800;color:#414745;position:sticky;top:0;z-index:1}
+tr:last-child td{border-bottom:0}
+.highlight-oppo{background:#f0f8f5}.highlight-mi{background:#fff7f1}
+.bar-section{padding:22px}.bar-row{display:grid;grid-template-columns:190px 1fr 64px;align-items:center;gap:12px;margin:13px 0}
+.bar-label{font-size:13px;color:#3f4643}.bar-track{height:13px;background:#efefec;border-radius:999px;overflow:hidden}.bar{height:100%;border-radius:999px}
+.bar.oppo{background:linear-gradient(90deg,#37aa91,var(--oppo2))}.bar.mi{background:linear-gradient(90deg,#f29b68,var(--mi2))}.bar.gray{background:linear-gradient(90deg,#9ca5a1,#69716e)}
+.bar-val{text-align:right;font-size:13px;font-weight:850}.legend{display:flex;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:12px}.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+.chart-note{font-size:11px;color:#858c89;margin-top:12px;padding-top:10px;border-top:1px dashed #dedbd6}
+.vs{display:grid;grid-template-columns:1fr 52px 1fr;gap:12px;align-items:stretch}
+.vs-col{border:1px solid var(--line);border-radius:17px;padding:20px;background:#fff}.vs-col.oppo{border-top:4px solid var(--oppo)}.vs-col.mi{border-top:4px solid var(--mi)}
+.vs-mid{display:grid;place-items:center;font-weight:900;color:#a5aaa7}
+.list{margin:0;padding-left:18px;color:#505754;font-size:14px}.list li{margin:6px 0}
+.position-card{padding:20px}.position-card .title{display:flex;align-items:center;gap:10px}.dot{width:11px;height:11px;border-radius:50%}.dot.oppo{background:var(--oppo)}.dot.mi{background:var(--mi)}
+.position-card p{margin:8px 0 0;color:var(--muted);font-size:14px}
+.value-map{display:grid;grid-template-columns:190px 1fr 1fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.value-map > div{background:#fff;padding:14px;font-size:13px}.value-map .head{background:#f8f7f4;font-weight:800}.value-map .rowhead{font-weight:800}
+.win{color:var(--oppo2);font-weight:850}.miwin{color:var(--mi2);font-weight:850}.tie{color:#59615e;font-weight:750}
+.callout{padding:15px 17px;border-radius:13px;background:#fbf0f3;border:1px solid #f0d8e0;margin-top:16px;font-size:14px}
+.callout.green{background:#eaf6f2;border-color:#cce9e0}.callout.orange{background:#fff3ea;border-color:#f0d7c6}.callout.blue{background:#eef5fb;border-color:#d7e6f2}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-top:18px}
+.step{border:1px solid var(--line);border-radius:14px;padding:15px 10px;text-align:center;background:#fff;min-height:120px}
+.step .n{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;margin:0 auto 8px;background:var(--pink);color:#fff;font-weight:900;font-size:12px}
+.step:nth-child(2) .n{background:var(--oppo)}.step:nth-child(3) .n{background:var(--blue)}.step:nth-child(4) .n{background:#d8965d}.step:nth-child(5) .n{background:var(--purple)}.step:nth-child(6) .n{background:var(--mi)}
+.step strong{display:block;font-size:14px}.step small{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45}
+.channel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.channel{padding:18px}.channel .ico{font-size:23px;margin-bottom:7px}.channel p{font-size:13px;color:var(--muted);margin:0}
+.message-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.message{padding:21px;border-radius:17px;border:1px solid var(--line);background:#fff}.message.oppo{background:var(--soft-oppo)}.message.mi{background:var(--soft-mi)}
+.quote{font-size:20px;font-weight:850;line-height:1.4;margin:4px 0 10px}.message p{margin:0;color:#59615e;font-size:14px}
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.ladder-card{padding:20px;position:relative;border-top:4px solid var(--oppo)}.ladder-card:nth-child(2){border-top-color:var(--pink)}.ladder-card:nth-child(3){border-top-color:var(--blue)}
+.ladder-card .level{font-size:11px;font-weight:850;color:var(--muted);letter-spacing:.1em}.ladder-card p{color:var(--muted);font-size:14px;margin:6px 0 0}
+.matrix{display:grid;grid-template-columns:180px repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}.matrix div{background:#fff;padding:13px;font-size:13px}.matrix .head{font-weight:850;background:#f8f7f4}.matrix .row{font-weight:800}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.test{padding:18px;border-left:4px solid var(--oppo)}.test:nth-child(2),.test:nth-child(5){border-left-color:var(--pink)}.test:nth-child(3),.test:nth-child(6){border-left-color:var(--blue)}.test p{margin:7px 0 0;color:var(--muted);font-size:13px}
+.opp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.opp{padding:19px}.opp .type{font-size:11px;font-weight:900;letter-spacing:.08em;margin-bottom:5px}.opp.good .type{color:var(--oppo2)}.opp.risk .type{color:#b24836}.opp p{margin:0;color:var(--muted);font-size:14px}
+.priority{display:grid;grid-template-columns:150px 1fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}.priority div{background:#fff;padding:14px;font-size:13px}.priority .head{background:#f8f7f4;font-weight:850}.priority .p0{color:var(--oppo2);font-weight:850}.priority .p1{color:var(--pink);font-weight:850}.priority .p2{color:var(--blue);font-weight:850}
+.source-list{margin:0;padding-left:20px}.source-list li{margin:10px 0;font-size:13px;color:#555e5a}.source-list a{color:#286db0;word-break:break-all}.source-list .grade{display:inline-block;min-width:27px;text-align:center;margin-right:7px;padding:2px 6px;border-radius:999px;font-size:10px;font-weight:900}.grade.a{background:var(--soft-oppo);color:var(--oppo2)}.grade.b{background:var(--soft-blue);color:#28618f}.grade.c{background:var(--soft-gold);color:#87640d}
+.note{font-size:12px;color:#7b827f;padding:12px 14px;border:1px dashed #d4d1cb;border-radius:12px;background:#faf9f7;margin-top:14px}
+.footer{text-align:center;padding:24px 0 36px;font-size:12px;color:#858b88}
+.print-btn{position:fixed;right:18px;bottom:18px;z-index:60;border:0;background:#1d2421;color:#fff;border-radius:999px;padding:12px 17px;box-shadow:0 8px 26px rgba(0,0,0,.18);font-weight:750;cursor:pointer}
+.top-btn{position:fixed;right:18px;bottom:70px;z-index:60;width:42px;height:42px;border:0;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);cursor:pointer}
+@media(max-width:900px){
+ .hero-grid,.grid-4,.grid-3,.channel-grid,.ladder,.test-grid{grid-template-columns:1fr 1fr}
+ .grid-2,.message-grid,.opp-grid{grid-template-columns:1fr}
+ .flow{grid-template-columns:repeat(3,1fr)}
+ .vs{grid-template-columns:1fr}.vs-mid{display:none}
+ .value-map{grid-template-columns:160px repeat(4,170px);overflow:auto}
+ .matrix{grid-template-columns:160px repeat(4,220px);overflow:auto}
+ .priority{grid-template-columns:140px repeat(3,220px);overflow:auto}
+}
+@media(max-width:620px){
+ .container{width:min(100% - 22px,1180px)}.hero{padding:44px 0 36px}.hero-grid{grid-template-columns:1fr}.hero-side{display:none}
+ .section-card{padding:21px}.grid-4,.grid-3,.scope-grid,.channel-grid,.ladder,.test-grid{grid-template-columns:1fr}
+ .flow{grid-template-columns:1fr 1fr}.bar-row{grid-template-columns:135px 1fr 50px}
+ h2{font-size:26px}
+}
+@media print{
+ nav,.print-btn,.top-btn{display:none!important}body{background:#fff}.card{box-shadow:none}.hero{padding:35px 0}.section-card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="ribbon"></div>
+<header class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Competitive Analysis · Launch Positioning</div>
+   <h1>OPPO Find X10 系列<br>vs 小米 18 Pro 系列</h1>
+   <p>基于“竞品类型 → 用户与定位 → 产品与卖点 → 渠道与内容 → 完整转化链路 → 输出判断与动作”的竞品分析 SOP，为新品上市、卖点定位、内容策略与电商转化提供可执行结论。</p>
+   <div class="hero-tags">
+    <span class="chip">市场：中国大陆</span><span class="chip">数据快照：2026-10-05</span>
+    <span class="chip">直接竞品：Xiaomi 18 Pro / Pro Max</span><span class="chip">目标：GTM + 卖点定位 + 转化</span>
+   </div>
+  </div>
+  <aside class="hero-side">
+   <div class="snapshot">Direct pairing</div><h3>当前真正可比的两组对位</h3>
+   <div class="pair"><span>Find X10</span><b>↔ 小米 18 Pro</b></div>
+   <div class="pair"><span>Find X10 Pro Max</span><b>↔ 小米 18 Pro Max</b></div>
+   <div class="pair"><span>Find X10 E</span><b>4999 元价格锚点</b></div>
+   <div class="pair"><span>小米 18 标准版</span><b>截至快照日未上市</b></div>
+  </aside>
+ </div>
+</header>
+
+<nav><div class="container nav-inner">
+ <a href="#summary">结论</a><a href="#scope">竞品选择</a><a href="#market">市场</a><a href="#users">用户定位</a>
+ <a href="#product">产品卖点</a><a href="#price">价格</a><a href="#message">品牌话术</a><a href="#channel">渠道内容</a>
+ <a href="#journey">转化链路</a><a href="#signals">市场信号</a><a href="#opportunity">机会风险</a><a href="#positioning">卖点定位</a>
+ <a href="#gtm">GTM动作</a><a href="#tests">A/B测试</a><a href="#sources">来源</a>
+</div></nav>
+
+<main class="container">
+
+<section id="summary" class="card section-card">
+ <div class="kicker">Executive Summary</div><h2>先给结论：Find X10 不应与小米只打“参数战”</h2>
+ <p class="sub">真正应该抢的是消费者心里的选择理由。当前两家的核心硬件高度趋同，“双 2 亿”已经不是 OPPO 可以独占的卖点。</p>
+ <div class="grid-4">
+  <div class="card metric oppo"><div class="num">¥500</div><div class="label">Find X10 起售价比小米 18 Pro 低</div><div class="src">5499 vs 5999</div></div>
+  <div class="card metric oppo"><div class="num">+1000</div><div class="label">标准对位电池容量差</div><div class="src">8000mAh vs 7000mAh</div></div>
+  <div class="card metric mi"><div class="num">2nm</div><div class="label">小米 18 Pro 性能传播更强</div><div class="src">第六代骁龙 8 至尊版</div></div>
+  <div class="card metric pink"><div class="num">3×2亿</div><div class="label">Find X10 Pro Max 的独特影像硬件</div><div class="src">主摄 + 超广角 + 长焦</div></div>
+ </div>
+ <div class="leadbox" style="margin-top:18px">建议核心定位：<b>“真实影像，一步到位”</b>。标准版用“同预算更完整：双 2 亿 + 8000mAh + 更大存储”建立价值；Pro Max 用“<b>三 2 亿全焦段 + 全焦段 8K + 哈苏真实还原</b>”抢占专业影像心智。不要把主战场设成小米更擅长传播的“2nm 性能 / AI 百变背屏 / 科技新奇感”。</div>
+</section>
+
+<section id="scope" class="card section-card">
+ <div class="kicker">Step 01 · Competitor Types</div><h2>一、先确定竞品：为什么这次核心分析小米 18 Pro 系列</h2>
+ <p class="sub">竞品不等于“都是旗舰”。先按消费者预算、需求和上市窗口划分，再决定分析深度。</p>
+ <div class="scope-grid">
+  <div class="card scope"><span class="badge b-a">直接竞品</span><h3>小米 18 Pro / Pro Max</h3><p>上市仅相差 1 天；同为 5000–9000 元安卓旗舰；共同把影像、性能、续航、AI 作为核心购买理由。消费者在真实购买时存在高度替代关系。</p></div>
+  <div class="card scope"><span class="badge b-b">间接竞品</span><h3>iPhone 18 Pro / 华为 Mate 90 / vivo X500</h3><p>争夺相同的高端换机预算，但品牌生态与价值主张不同。本报告只在市场背景中使用，不分散核心分析资源。</p></div>
+  <div class="card scope"><span class="badge b-c">参考竞品</span><h3>影像 / 内容打法标杆</h3><p>徕卡、哈苏、相机品牌内容、旅行摄影与专业视频创作等，可作为打法参考，但不能误当成直接购买替代。</p></div>
+ </div>
+ <div class="callout orange"><b>关键口径：</b>截至 2026-10-05，小米 18 标准版尚未正式上市，公开报道此前预计延后。因此当前最合理的对位是 <b>Find X10 ↔ 小米 18 Pro</b>、<b>Find X10 Pro Max ↔ 小米 18 Pro Max</b>；Find X10 E 则形成 4999 元的下探价位覆盖。</div>
+</section>
+
+<section id="market" class="card section-card">
+ <div class="kicker">Market Context</div><h2>二、市场背景：高端化继续，但 2026 年“涨价”正在压缩首发冲动</h2>
+ <p class="sub">新品定位不能脱离大盘。现在的消费者不是不愿买旗舰，而是更需要证明“为什么这一代值得立即换”。</p>
+ <div class="grid-2">
+  <div class="card bar-section">
+   <h3 style="margin-top:0">2026 Q2 中国智能手机出货份额</h3>
+   <div class="bar-row"><div class="bar-label">华为</div><div class="bar-track"><div class="bar gray" style="width:100%"></div></div><div class="bar-val">22.6%</div></div>
+   <div class="bar-row"><div class="bar-label">苹果</div><div class="bar-track"><div class="bar gray" style="width:80.1%"></div></div><div class="bar-val">18.1%</div></div>
+   <div class="bar-row"><div class="bar-label">OPPO*</div><div class="bar-track"><div class="bar oppo" style="width:70.8%"></div></div><div class="bar-val">16.0%</div></div>
+   <div class="bar-row"><div class="bar-label">vivo</div><div class="bar-track"><div class="bar gray" style="width:70.8%"></div></div><div class="bar-val">16.0%</div></div>
+   <div class="bar-row"><div class="bar-label">小米</div><div class="bar-track"><div class="bar mi" style="width:54.9%"></div></div><div class="bar-val">12.4%</div></div>
+   <div class="bar-row"><div class="bar-label">荣耀</div><div class="bar-track"><div class="bar gray" style="width:50%"></div></div><div class="bar-val">11.3%</div></div>
+   <div class="chart-note">来源：IDC 2026 Q2 初步数据。*IDC 的 OPPO 口径包含 OPPO、OnePlus、realme，因此不能直接等同 OPPO 主品牌零售份额。</div>
+  </div>
+  <div class="card bar-section">
+   <h3 style="margin-top:0">高端市场仍在扩张</h3>
+   <div class="grid-2">
+    <div class="metric blue" style="padding:8px 0"><div class="num">29%</div><div class="label">2026 H1 全球高端手机销量占比</div></div>
+    <div class="metric oppo" style="padding:8px 0"><div class="num">+69%</div><div class="label">OPPO 高端市场同比增长</div></div>
+   </div>
+   <p style="font-size:14px;color:var(--muted)">Counterpoint 将批发均价 ≥600 美元定义为高端市场。2026 上半年高端市场销量同比增长 5%，占整体销量 29%；其公开分析称 OPPO 的高端增长主要由 Find X9 系列驱动。</p>
+   <div class="callout green"><b>机会：</b>高端化不是逆势，而是行业主动选择。<br><b>压力：</b>存储与 SoC 成本上涨推动安卓提价，消费者换机周期延长，价格上涨必须被更清晰的体验增量证明。</div>
+  </div>
+ </div>
+ <div class="grid-3" style="margin-top:15px">
+  <div class="card metric pink"><div class="num">-4.3%</div><div class="label">IDC：2026 Q2 中国市场同比</div><div class="src">约 6600 万台</div></div>
+  <div class="card metric mi"><div class="num">-21.7%</div><div class="label">IDC：小米 Q2 出货同比</div><div class="src">成本与价格压力明显</div></div>
+  <div class="card metric oppo"><div class="num">-9.7%</div><div class="label">IDC：OPPO Q2 出货同比</div><div class="src">同口径含一加、realme</div></div>
+ </div>
+</section>
+
+<section id="users" class="card section-card">
+ <div class="kicker">Step 02 · User + Positioning</div><h2>三、拆用户和定位：不要只写“年轻高端用户”</h2>
+ <p class="sub">下面是基于价格、产品配置和官方传播所做的“需求型用户”推断，不把年龄画像伪装成调查事实。</p>
+ <div class="grid-2">
+  <div class="card position-card"><div class="title"><span class="dot oppo"></span><h4>Find X10｜影像优先的均衡旗舰用户</h4></div><p><span class="badge b-infer">分析推断</span> 想一次买到主摄+长焦都足够强、续航足、存储大，同时不愿上探 7000–9000 元超大杯的人。典型任务：旅行、人像、日常记录、短视频、长时间主力机。</p></div>
+  <div class="card position-card"><div class="title"><span class="dot mi"></span><h4>小米 18 Pro｜小屏性能 / 科技交互用户</h4></div><p><span class="badge b-infer">分析推断</span> 对 2nm 骁龙、小屏、硬件防窥、AI 百变背屏与“新奇科技体验”敏感的人。更容易被性能参数、交互创新、生态和可玩性打动。</p></div>
+  <div class="card position-card"><div class="title"><span class="dot oppo"></span><h4>Find X10 Pro Max｜专业影像与创作用户</h4></div><p><span class="badge b-infer">分析推断</span> 对超广角也要求高画质，重视全焦段照片/视频、演唱会/旅行、后期工作流、高容量存储，愿意为影像完整性付费。</p></div>
+  <div class="card position-card"><div class="title"><span class="dot mi"></span><h4>小米 18 Pro Max｜全能科技旗舰用户</h4></div><p><span class="badge b-infer">分析推断</span> 希望同时拥有顶级芯片、8500mAh、100W 快充、背屏、AI、防窥与徕卡影像，偏好“参数全面 + 科技感”的大屏旗舰。</p></div>
+ </div>
+ <h3>用户真正比较的不是参数，而是 5 个购买任务</h3>
+ <div class="matrix">
+  <div class="head">购买任务</div><div class="head">Find X10</div><div class="head">小米 18 Pro</div><div class="head">Find X10 Pro Max</div><div class="head">小米 18 Pro Max</div>
+  <div class="row">拍得好</div><div>双 2 亿 + 哈苏真实还原</div><div>双 2 亿 + 徕卡 + 传奇一瞬</div><div><b>三 2 亿全焦段</b> + 8K</div><div>双 2 亿 + 徕卡 + AI 影像</div>
+  <div class="row">用得久</div><div><b>8000mAh</b> + 五年电池耐用传播</div><div>7000mAh</div><div>8000mAh</div><div><b>8500mAh</b></div>
+  <div class="row">跑得快</div><div>天玑 9600M / 3nm</div><div><b>骁龙 8 至尊版 / 2nm</b></div><div>天玑 9600 Pro / 2nm</div><div>骁龙 8 超级至尊版 / 2nm</div>
+  <div class="row">有新鲜感</div><div>ColorOS 17 / LUMO / Bubble 配件</div><div><b>百变背屏 + 硬件防窥</b></div><div>专业影像工作流 / 哈苏增距</div><div><b>百变背屏 + AI + 防窥</b></div>
+  <div class="row">买得值</div><div><b>5499 起；5999 即 512GB</b></div><div>5999 起</div><div><b>6799 起；1TB 8999</b></div><div>6999 起；1TB 9999</div>
+ </div>
+</section>
+
+<section id="product" class="card section-card">
+ <div class="kicker">Step 03 · Product + Selling Points</div><h2>四、拆产品和卖点：同样是“双 2 亿”，真正差异在哪里</h2>
+ <p class="sub">只比像素会得出“大家都一样”。真正要比较的是：焦段完整性、传感器规格、视频链路、续航、交互创新和价格。</p>
+
+ <h3>标准对位｜Find X10 vs 小米 18 Pro</h3>
+ <div class="table-wrap"><table>
+  <thead><tr><th>维度</th><th>OPPO Find X10</th><th>小米 18 Pro</th><th>对新品定位的意义</th></tr></thead>
+  <tbody>
+   <tr><td>起售价</td><td class="highlight-oppo"><b>5499 元</b></td><td>5999 元</td><td><span class="win">OPPO 有 500 元入口优势</span></td></tr>
+   <tr><td>12+512GB</td><td class="highlight-oppo"><b>5999 元</b></td><td>6999 元</td><td><span class="win">同为 512GB，OPPO 低 1000 元</span></td></tr>
+   <tr><td>机身</td><td>6.59"，216g</td><td class="highlight-mi">6.4"，约 203g</td><td><span class="miwin">小米“小屏轻旗舰”更鲜明</span></td></tr>
+   <tr><td>芯片</td><td>天玑 9600M，3nm，最高 4.21GHz</td><td class="highlight-mi">第六代骁龙 8 至尊版，2nm，最高 5GHz</td><td>小米在参数党/性能传播上更有话题性</td></tr>
+   <tr><td>主摄</td><td>2 亿，1/1.4"，F1.6，23mm</td><td>2 亿，1/1.28"，F1.67</td><td>都为 2 亿主摄，不能只用像素做差异化</td></tr>
+   <tr><td>长焦</td><td>2 亿，1/1.56"，65mm，F2.6</td><td>2 亿，1/1.56"，75mm，F2.4，12cm 微距</td><td>都为 2 亿大底长焦，场景表达比数字更关键</td></tr>
+   <tr><td>超广角</td><td>5000 万，15mm，F2.0</td><td>5000 万，17mm 左右，F2.4</td><td>标准版差异不够大，重点应转到色彩/视频/场景</td></tr>
+   <tr><td>视频</td><td class="highlight-oppo">8K 30fps、4K 120fps、Open Gate、8K Log、杜比视界</td><td>公开报道支持 Open Gate；主打徕卡影像 + 传奇一瞬</td><td><span class="win">OPPO 可把“创作工作流”变成更清楚的卖点</span></td></tr>
+   <tr><td>电池</td><td class="highlight-oppo"><b>8000mAh</b></td><td>7000mAh</td><td><span class="win">标准对位是 OPPO 最直观的日常体验优势之一</span></td></tr>
+   <tr><td>有线 / 无线</td><td>80W / 50W</td><td class="highlight-mi">100W / 50W</td><td>小米快充数字更强，OPPO 应强调续航总体验而非瓦数</td></tr>
+   <tr><td>独特交互</td><td>ColorOS 17、LUMO、哈苏 XPAN、Bubble 外设</td><td class="highlight-mi">AI 百变背屏、硬件级智能防窥、AI 键</td><td><span class="miwin">小米更容易制造“看得见的新功能”</span></td></tr>
+  </tbody>
+ </table></div>
+
+ <h3>Pro Max 对位｜Find X10 Pro Max vs 小米 18 Pro Max</h3>
+ <div class="table-wrap"><table>
+  <thead><tr><th>维度</th><th>OPPO Find X10 Pro Max</th><th>小米 18 Pro Max</th><th>对新品定位的意义</th></tr></thead>
+  <tbody>
+   <tr><td>起售价</td><td class="highlight-oppo"><b>6799 元</b></td><td>6999 元</td><td><span class="win">OPPO 低 200 元</span></td></tr>
+   <tr><td>16+1TB</td><td class="highlight-oppo"><b>8999 元</b></td><td>9999 元</td><td><span class="win">高存储创作者价差达 1000 元</span></td></tr>
+   <tr><td>重量</td><td>约 233–235g</td><td>约 235g</td><td><span class="tie">基本同一重量级</span></td></tr>
+   <tr><td>芯片</td><td>天玑 9600 Pro，2nm，4.55GHz</td><td>第六代骁龙 8 超级至尊版，2nm，5GHz</td><td>没有统一实验条件时不做“谁性能更强”的无依据结论</td></tr>
+   <tr><td>主摄</td><td>2 亿，1/1.3"，F1.5，17 档动态范围</td><td>2 亿，1/1.28"，F1.67；Pro Max 公开报道含 LOFIC</td><td>主摄都强，应比真实样张与大光比成功率</td></tr>
+   <tr><td>长焦</td><td>2 亿，1/1.56"，70mm，F2.1，10cm 微距</td><td>2 亿，1/1.56"，75mm，F2.4，12cm 微距</td><td>焦段接近，OPPO 可重点验证暗光/人像/防抖体验</td></tr>
+   <tr><td>超广角</td><td class="highlight-oppo"><b>2 亿，1/1.56"，13mm，124°</b></td><td>5000 万</td><td><span class="win">“三 2 亿全焦段”是最明确的硬件差异化</span></td></tr>
+   <tr><td>视频</td><td class="highlight-oppo">全焦段 8K、4K 120fps 杜比视界、专业视频</td><td>支持 Open Gate 的公开报道；AI 影像能力突出</td><td><span class="win">OPPO 更适合占领“照片+视频双满配”</span></td></tr>
+   <tr><td>电池</td><td>8000mAh</td><td class="highlight-mi"><b>8500mAh</b></td><td><span class="miwin">小米原始容量领先 500mAh</span></td></tr>
+   <tr><td>有线 / 无线</td><td>80W / 50W</td><td class="highlight-mi">100W / 50W</td><td><span class="miwin">小米更适合用“快回血”传播</span></td></tr>
+   <tr><td>交互差异</td><td>哈苏、丹霞色彩、增距镜、ColorOS 17</td><td class="highlight-mi">AI 百变背屏、智能防窥、AI 功能</td><td>两家应占不同心智，不适合互相照抄</td></tr>
+  </tbody>
+ </table></div>
+ <div class="note">注：屏幕峰值亮度、芯片跑分等由于厂商测试口径不同，本报告不将不可直接比较的数字放在同一“胜负图”中，避免制造伪结论。</div>
+</section>
+
+<section id="price" class="card section-card">
+ <div class="kicker">Pricing Architecture</div><h2>五、价格体系：OPPO 真正值得打的是“同预算买到更多”</h2>
+ <div class="grid-2">
+  <div class="card bar-section">
+   <h3 style="margin-top:0">12GB + 256GB 官方首发价</h3>
+   <div class="bar-row"><div class="bar-label">Find X10</div><div class="bar-track"><div class="bar oppo" style="width:78.6%"></div></div><div class="bar-val">5499</div></div>
+   <div class="bar-row"><div class="bar-label">小米 18 Pro</div><div class="bar-track"><div class="bar mi" style="width:85.7%"></div></div><div class="bar-val">5999</div></div>
+   <div class="bar-row"><div class="bar-label">Find X10 Pro Max</div><div class="bar-track"><div class="bar oppo" style="width:97.1%"></div></div><div class="bar-val">6799</div></div>
+   <div class="bar-row"><div class="bar-label">小米 18 Pro Max</div><div class="bar-track"><div class="bar mi" style="width:100%"></div></div><div class="bar-val">6999</div></div>
+   <div class="chart-note">单位：人民币元；官方首发价口径。</div>
+  </div>
+  <div class="card bar-section">
+   <h3 style="margin-top:0">电池容量</h3>
+   <div class="bar-row"><div class="bar-label">Find X10</div><div class="bar-track"><div class="bar oppo" style="width:94.1%"></div></div><div class="bar-val">8000</div></div>
+   <div class="bar-row"><div class="bar-label">小米 18 Pro</div><div class="bar-track"><div class="bar mi" style="width:82.4%"></div></div><div class="bar-val">7000</div></div>
+   <div class="bar-row"><div class="bar-label">Find X10 Pro Max</div><div class="bar-track"><div class="bar oppo" style="width:94.1%"></div></div><div class="bar-val">8000</div></div>
+   <div class="bar-row"><div class="bar-label">小米 18 Pro Max</div><div class="bar-track"><div class="bar mi" style="width:100%"></div></div><div class="bar-val">8500</div></div>
+   <div class="chart-note">单位：mAh。标准对位 OPPO 明显领先；Pro Max 对位小米领先。</div>
+  </div>
+ </div>
+ <h3>同预算价值锚点</h3>
+ <div class="grid-3">
+  <div class="card metric oppo"><div class="num">¥5999</div><div class="label">可以买 Find X10 12+512GB</div><div class="src">同价小米 18 Pro 为 12+256GB</div></div>
+  <div class="card metric oppo"><div class="num">¥7499</div><div class="label">Find X10 Pro Max 12+512GB</div><div class="src">小米 18 Pro Max 12+512GB 为 7999</div></div>
+  <div class="card metric oppo"><div class="num">¥8999</div><div class="label">Find X10 Pro Max 16+1TB</div><div class="src">小米 18 Pro Max 同规格 9999</div></div>
+ </div>
+ <div class="callout green"><b>价格传播建议：</b>不要只写“便宜 500 元”。更强的表达是：<b>“同样 5999，Find X10 给到 512GB + 8000mAh + 双 2 亿”</b>。这是更接近消费者真实比较方式的价值证据。</div>
+</section>
+
+<section id="message" class="card section-card">
+ <div class="kicker">Brand Message</div><h2>六、双方在争夺什么心智：OPPO 是“真实影像”，小米是“科技影像”</h2>
+ <div class="message-grid">
+  <div class="message oppo"><span class="badge b-a">OPPO 官方主线</span><div class="quote">“哈苏超清原相机 / 还原这一刻，留住最真的”</div><p>产品页把“细节清晰、色彩还原、光影真实”放在核心位置；标准版“双 2 亿”，Pro Max“三 2 亿”，再连接到哈苏人像、XPAN、丹霞色彩、8K / Log / Open Gate。</p></div>
+  <div class="message mi"><span class="badge b-b">小米官方主线</span><div class="quote">“双尺寸影像科技旗舰 / AI 百变背屏 / 2nm 旗舰平台”</div><p>小米把“徕卡双 2 亿 + 2nm 性能 + 背屏 + 智能防窥”组合成更明显的科技创新叙事；硬件功能更容易在发布会和短视频里形成视觉记忆点。</p></div>
+ </div>
+ <h3>消费者心智的潜在分工</h3>
+ <div class="value-map">
+  <div class="head">心智维度</div><div class="head">OPPO 当前资产</div><div class="head">小米当前资产</div><div class="head">OPPO 应强化</div><div class="head">不建议硬碰</div>
+  <div class="rowhead">影像</div><div>真实还原、哈苏、人像、全焦段</div><div>徕卡、双 2 亿、传奇一瞬</div><div class="win">真实成功率 + 专业工作流</div><div>仅靠“2 亿像素”</div>
+  <div class="rowhead">科技感</div><div>ColorOS、AI、增距镜</div><div>背屏、防窥、AI 键、2nm</div><div>把 AI 变成“帮用户拍得更好”</div><div class="miwin">背屏新奇感</div>
+  <div class="rowhead">续航</div><div>标准版 8000mAh 很强</div><div>Pro Max 8500mAh</div><div class="win">标准版“一天不用找电”</div><div>Pro Max 纯容量战</div>
+  <div class="rowhead">价值</div><div>同容量存储价格更低</div><div>强性能与交互溢价</div><div class="win">同预算配置完整度</div><div>只打低价</div>
+ </div>
+</section>
+
+<section id="channel" class="card section-card">
+ <div class="kicker">Step 04 · Channel + Content</div><h2>七、渠道与内容打法：不伪造平台热度，直接看“用户在哪一步需要什么证据”</h2>
+ <p class="sub">公开网页无法稳定取得小红书/抖音完整搜索量、达人矩阵和真实转化数据，因此本报告不编造“爆文数/达人数量”。以下把可验证的官方传播与可执行内容策略分开。</p>
+ <div class="channel-grid">
+  <div class="card channel"><div class="ico">🔎</div><h4>小红书｜搜索与种草</h4><p><b>OPPO 应抢：</b>旅行样片、肤色、人像、逆光、演唱会、双 2 亿怎么选、Find X10 vs 小米 18 Pro。内容重点是“实拍证据 + 场景”，而不是参数海报。</p></div>
+  <div class="card channel"><div class="ico">▶</div><h4>抖音｜爆发与转化</h4><p><b>OPPO 应抢：</b>3 秒可见的画面差异：逆光人像、长焦抓拍、超广细节、一天续航。短视频先给结果，再解释哈苏/丹霞/2 亿。</p></div>
+  <div class="card channel"><div class="ico">▣</div><h4>B站｜深度信任</h4><p><b>OPPO 应抢：</b>控制变量对比、全焦段样片、8K/Log/Open Gate、续航、散热。主动解释“为什么不是只看芯片/像素”。</p></div>
+  <div class="card channel"><div class="ico">🛒</div><h4>电商｜最终承接</h4><p><b>OPPO 应抢：</b>首屏直接写预算价值：5499 起 / 5999=512GB / 8000mAh / 双 2 亿；Pro Max 则突出三 2 亿与高存储价差。</p></div>
+ </div>
+ <h3>首发权益结构也体现了两种打法</h3>
+ <div class="table-wrap"><table>
+  <thead><tr><th>品牌</th><th>公开首发权益样例</th><th>隐含转化逻辑</th><th>建议</th></tr></thead>
+  <tbody>
+   <tr><td><b>OPPO / 京东</b></td><td>至高 24 期免息、以旧换新至高补贴 1400 元、部分赠品至高约 399 元、+399 元保值换新等</td><td>降低月供与换机现金压力，突出“现在换不疼”</td><td class="win">继续把 24 期免息与高存储价值结合，针对高端安卓涨价焦虑</td></tr>
+   <tr><td><b>小米 / 京东</b></td><td>公开活动信息含 12 期免息、以旧换新至高 1100 元、耳机礼、碎屏/背屏/电池等服务权益</td><td>用配件和服务包放大“背屏新功能”的拥有价值</td><td>OPPO 不必照抄；应把摄影手柄/增距镜/云台等与影像场景绑定</td></tr>
+  </tbody>
+ </table></div>
+ <div class="note">首发权益为特定渠道、特定时期公开活动，可能随时间/地区变化；在真正投放前应以当日渠道页重新核验。</div>
+</section>
+
+<section id="journey" class="card section-card">
+ <div class="kicker">Step 05 · Conversion Journey</div><h2>八、拆完整转化链路：小米在哪一步更容易赢，OPPO该怎样截流</h2>
+ <div class="flow">
+  <div class="step"><div class="n">1</div><strong>曝光</strong><small>发布会 / 信息流 / 门店 / 达人</small></div>
+  <div class="step"><div class="n">2</div><strong>种草</strong><small>样片 / 背屏 / 2nm / 续航场景</small></div>
+  <div class="step"><div class="n">3</div><strong>搜索</strong><small>“怎么选 / 拍照 / 续航 / 性能”</small></div>
+  <div class="step"><div class="n">4</div><strong>对比</strong><small>价格 / 存储 / 影像 / 芯片 / 手感</small></div>
+  <div class="step"><div class="n">5</div><strong>下单</strong><small>免息 / 换新 / 赠品 / 现货</small></div>
+  <div class="step"><div class="n">6</div><strong>复购转介</strong><small>系统 / 影像成功率 / 售后 / 生态</small></div>
+ </div>
+ <div class="table-wrap" style="margin-top:18px"><table>
+  <thead><tr><th>阶段</th><th>小米更容易形成的理由</th><th>OPPO 的关键反击动作</th><th>要看的数据</th></tr></thead>
+  <tbody>
+   <tr><td>曝光</td><td>背屏、2nm、5GHz、科技感强，短视频第一眼更“新”</td><td><b>用画面结果做第一眼：</b>逆光肤色、超广细节、长焦抓拍，不先讲技术名词</td><td>3s/6s VTR、素材首屏停留、CTR</td></tr>
+   <tr><td>种草</td><td>AI 背屏、隐私屏能形成“我没见过”的分享动力</td><td>建立“旅行/人像/演唱会/视频创作”内容矩阵，让用户看到使用价值</td><td>收藏率、评论问题、搜索增量</td></tr>
+   <tr><td>搜索</td><td>性能和科技类关键词天然强</td><td>抢“Find X10和小米18 Pro怎么选 / 双2亿区别 / 8000mAh旗舰 / 旅行手机”</td><td>品牌词、竞品词、场景词排名</td></tr>
+   <tr><td>对比</td><td>骁龙 2nm、100W、背屏、防窥是清晰优势</td><td><b>把同预算价值做成表：</b>5999=512GB+8000mAh；PM 三 2 亿 + 1TB 价差</td><td>商品页停留、参数页点击、加购率</td></tr>
+   <tr><td>下单</td><td>配件/服务权益，线下小米之家体验背屏</td><td>24 期免息、以旧换新、影像礼盒/手柄/增距镜分层；降低高端安卓涨价心理阻力</td><td>Checkout、分期渗透、换新渗透、CVR</td></tr>
+   <tr><td>复购/转介</td><td>人车家生态与 AI 功能持续使用</td><td>用 ColorOS 流畅、拍摄成功率、跨设备分享、哈苏风格沉淀口碑</td><td>NPS、影像功能使用率、30/90天推荐</td></tr>
+  </tbody>
+ </table></div>
+</section>
+
+<section id="signals" class="card section-card">
+ <div class="kicker">Early Market Signals</div><h2>九、首销信号：价格上涨已经成为这一代旗舰共同的转化阻力</h2>
+ <p class="sub">这里的数据来自行业人士第三方观察，经媒体转述，并非厂商官方销量。只能看方向，不能当作审计级绝对销量。</p>
+ <div class="grid-2">
+  <div class="card bar-section">
+   <h3 style="margin-top:0">首销日相对各自上代的第三方指数</h3>
+   <div class="bar-row"><div class="bar-label">Find X10 系列</div><div class="bar-track"><div class="bar oppo" style="width:40%"></div></div><div class="bar-val">≈40%</div></div>
+   <div class="bar-row"><div class="bar-label">小米 18 Pro 系列</div><div class="bar-track"><div class="bar mi" style="width:30%"></div></div><div class="bar-val">≈30%</div></div>
+   <div class="chart-note">两者的“上代基准”并不完全一致，不能用 40% 与 30% 推断谁绝对销量更高。行业观察同时称小米 18 Pro 系列首销绝对值在同期三家中相对最高。</div>
+  </div>
+  <div class="card section-card" style="padding:22px">
+   <h3 style="margin-top:0">这对 GTM 的真正意义</h3>
+   <ul class="list">
+    <li>问题不是“旗舰没人买”，而是<b>涨价后的立即购买理由不足</b>。</li>
+    <li>“芯片更强 / 像素更高”已经难以单独支撑换代。</li>
+    <li>高存储、免息、以旧换新会从促销工具变成新品定位的一部分。</li>
+    <li>OPPO 首销样本中 16GB 版本占比较高的第三方观察，说明高端用户并不只追低价，而是愿意为“长期使用配置”付费。</li>
+   </ul>
+   <div class="callout orange"><b>因此：</b>新品传播应从“我升级了什么”改成“你为什么现在就值得换”。</div>
+  </div>
+ </div>
+</section>
+
+<section id="opportunity" class="card section-card">
+ <div class="kicker">Final Conclusions</div><h2>十、竞品做对了什么、问题在哪里、我们的机会在哪里</h2>
+ <div class="opp-grid">
+  <div class="card opp good"><div class="type">小米做对了什么</div><h4>创新点“可视化”，非常适合发布会和短视频</h4><p>百变背屏、硬件防窥、2nm / 5GHz 都能用一句话、一张图解释，信息读取效率高；徕卡双 2 亿又保证了影像不掉队。</p></div>
+  <div class="card opp good"><div class="type">OPPO 已有的强资产</div><h4>影像体系更完整，标准版价值密度高</h4><p>标准版就下放双 2 亿、8000mAh、Open Gate/8K Log；Pro Max 三 2 亿形成真正可验证的硬件差异，同时首发价与高存储价格更克制。</p></div>
+  <div class="card opp risk"><div class="type">OPPO 风险</div><h4>“双 2 亿 / 哈苏”容易被消费者理解成又一次参数升级</h4><p>如果内容仍是官方样片 + 镜头参数，消费者会发现小米同样“双 2 亿”，差异瞬间被压平。必须用真实场景成功率证明“真实还原”不是一句品牌话。</p></div>
+  <div class="card opp risk"><div class="type">小米风险</div><h4>高配置同时伴随更高价格和复杂信息</h4><p>标准 Pro 起步 5999、Pro Max 6999，且首销第三方数据相对上代明显走弱。背屏虽然显眼，但用户最终仍会问“值不值、是不是每天都用得到”。</p></div>
+ </div>
+ <div class="callout green"><b>OPPO 最大机会：</b>把“小米的卖点是我有什么新东西”转成“OPPO 的卖点是你每一次拍、每一天用，都能得到更稳定的结果”。这是“科技展示”与“体验结果”的定位错位竞争。</div>
+</section>
+
+<section id="positioning" class="card section-card">
+ <div class="kicker">Positioning Recommendation</div><h2>十一、建议的 Find X10 系列卖点层级</h2>
+ <div class="ladder">
+  <div class="card ladder-card"><div class="level">LEVEL 01 · 核心心智</div><h3>真实影像，一步到位</h3><p>不是“像素更多”，而是从细节、肤色、光影、焦段到视频，都尽量还原真实，并且标准版也不需要为了影像明显妥协。</p></div>
+  <div class="card ladder-card"><div class="level">LEVEL 02 · 理性证据</div><h3>同预算更完整</h3><p>Find X10：5499 起、5999 即 512GB、8000mAh、双 2 亿；Pro Max：6799 起、三 2 亿、1TB 比直接竞品低 1000 元。</p></div>
+  <div class="card ladder-card"><div class="level">LEVEL 03 · 场景钉子</div><h3>旅行 / 人像 / 演唱会 / Vlog</h3><p>把硬件拆成具体任务：逆光肤色自然、远处抓拍清楚、超广不糊、视频后期空间大、一天拍摄不焦虑。</p></div>
+ </div>
+
+ <h3>两款机型分别怎么说</h3>
+ <div class="vs">
+  <div class="vs-col oppo"><span class="badge b-a">Find X10</span><h3>“不用上超大杯，也能把影像和续航一次配齐。”</h3><ul class="list">
+   <li><b>第一卖点：</b>双 2 亿哈苏原相机 → 真实肤色 / 远近都清楚。</li>
+   <li><b>第二卖点：</b>8000mAh → 比直接竞品标准对位多 1000mAh。</li>
+   <li><b>第三卖点：</b>同预算高存储 → 5999 元 512GB。</li>
+   <li><b>内容防守：</b>小米的 2nm / 100W / 背屏，不回避；用“我每天真正得到什么”转回体验。</li>
+  </ul></div>
+  <div class="vs-mid">VS</div>
+  <div class="vs-col mi"><span class="badge b-b">Find X10 Pro Max</span><h3>“照片视频双满配：三 2 亿全焦段，远近都不留短板。”</h3><ul class="list">
+   <li><b>第一卖点：</b>三 2 亿 → 尤其把 2 亿超广角讲成“超广也能裁”。</li>
+   <li><b>第二卖点：</b>17 档主摄 + 丹霞色彩 → 大光比与肤色真实。</li>
+   <li><b>第三卖点：</b>全焦段 8K / Log / Open Gate → 创作者工作流。</li>
+   <li><b>价值证据：</b>同为约 235g；起售低 200，1TB 低 1000。</li>
+  </ul></div>
+ </div>
+</section>
+
+<section id="gtm" class="card section-card">
+ <div class="kicker">GTM Operating Actions</div><h2>十二、从宏观到具体：这些差异应该怎样指导新品上市动作</h2>
+ <div class="priority">
+  <div class="head">层级</div><div class="head">战略动作</div><div class="head">具体执行</div><div class="head">判断指标</div>
+  <div class="p0">P0｜心智</div><div>不要再让“双 2 亿”单独做主标题</div><div>统一对外语言为“真实影像 / 一步到位 / 全焦段完整”，所有达人 Brief 必须用场景证明</div><div>品牌词关联搜索、卖点记忆、评论关键词</div>
+  <div class="p0">P0｜价格</div><div>把“同预算更多”直接做成素材</div><div>5999：Find X10 512GB vs 小米 18 Pro 256GB；Pro Max 1TB 价差直接可视化</div><div>加购率、CVR、高存储占比</div>
+  <div class="p0">P0｜内容</div><div>优先做“对比结果”，不是规格讲解</div><div>逆光人像、夜景肤色、3X长焦、超广裁切、视频防抖做固定测试脚本；每条内容必须给原图/裁切</div><div>完播、收藏、搜索提升、评论意图</div>
+  <div class="p1">P1｜搜索</div><div>承接竞品比较需求</div><div>布局“Find X10和小米18 Pro怎么选、双2亿区别、6000元旗舰、旅行手机、演唱会手机”等</div><div>竞品词点击、SEO/SOV、自然搜索转化</div>
+  <div class="p1">P1｜达人</div><div>从“数码测评”扩到“场景创作者”</div><div>数码 KOL 负责可信度；旅行/人像/舞台/宠物/亲子创作者负责把影像变成真实使用场景</div><div>达人后搜、样片保存、商品点击</div>
+  <div class="p1">P1｜电商</div><div>首屏按购买任务组织，而不是按技术部门组织</div><div>首屏：价格/存储/电池/双2亿；第二屏：人物/长焦；第三屏：视频；之后再讲芯片和系统</div><div>首屏跳失、详情深度、咨询词</div>
+  <div class="p2">P2｜权益</div><div>用金融工具对冲涨价心理</div><div>24期免息、以旧换新、高存储升级券、影像配件权益分人群投放</div><div>分期渗透、换新渗透、权益使用率</div>
+  <div class="p2">P2｜门店</div><div>把“真实影像”做成可现场验证</div><div>设置逆光人像、长焦文字牌、超广细节、夜景灯箱 4 个对比点；让顾客自己拍，不只看演示机样片</div><div>试拍率、驻足时长、试用到成交</div>
+ </div>
+
+ <h3>推荐的上市内容矩阵</h3>
+ <div class="matrix">
+  <div class="head">内容主题</div><div class="head">小红书</div><div class="head">抖音</div><div class="head">B站</div><div class="head">电商详情页</div>
+  <div class="row">真实肤色</div><div>同场景人像组图</div><div>逆光前后 3 秒钩子</div><div>色彩/肤色控制变量横评</div><div>原图 + 100% 裁切</div>
+  <div class="row">长焦/演唱会</div><div>座位距离 + 样片</div><div>“坐后排能拍多清楚”</div><div>稳定、防抖、暗光完整测试</div><div>焦段示意 + 场景案例</div>
+  <div class="row">Pro Max 超广</div><div>建筑/风光大场景</div><div>超广裁切挑战</div><div>2亿超广 vs 5000万超广</div><div>三 2 亿一屏讲清</div>
+  <div class="row">续航</div><div>旅行一天时间线</div><div>“从早拍到晚还剩多少”</div><div>统一亮度/网络实测</div><div>8000mAh + 80W + 50W</div>
+  <div class="row">价值</div><div>6000 元怎么买</div><div>同预算配置对比</div><div>长期持有成本</div><div>5999=512GB 强提示</div>
+ </div>
+</section>
+
+<section id="tests" class="card section-card">
+ <div class="kicker">Test Plan</div><h2>十三、上市后最值得做的 6 个 A/B 测试</h2>
+ <div class="test-grid">
+  <div class="card test"><h4>01｜像素 vs 结果</h4><p>A：“双 2 亿哈苏”；B：“逆光人像肤色也真实”。看 CTR、VTR、加购，验证消费者是否更吃场景结果。</p></div>
+  <div class="card test"><h4>02｜价格 vs 同预算价值</h4><p>A：“5499 起”；B：“5999=512GB+8000mAh+双2亿”。验证简单低价还是配置价值更强。</p></div>
+  <div class="card test"><h4>03｜影像 vs 续航</h4><p>按达人/人群分组，测试旅行摄影人群与重度主力机人群的主卖点差异。</p></div>
+  <div class="card test"><h4>04｜专业 vs 小白</h4><p>A：8K Log/Open Gate；B：一键拍好、肤色自然。区分创作者与普通高端换机用户。</p></div>
+  <div class="card test"><h4>05｜免息 vs 赠品</h4><p>同一价位测试 24 期免息、存储升级券、摄影配件礼，比较支付转化与利润贡献。</p></div>
+  <div class="card test"><h4>06｜竞品对比页</h4><p>搜索流量进入专门“Find X10 vs 小米18 Pro怎么选”页，按影像/续航/性能/交互四种需求分流。</p></div>
+ </div>
+ <div class="callout blue"><b>测试纪律：</b>同素材只改一个变量；用支付订单而非点击作为最终胜负；至少同时看 CVR、客单、退货与利润，不要把“点击更高”误判成“策略更优”。</div>
+</section>
+
+<section class="card section-card">
+ <div class="kicker">One-page Conclusion</div><h2>十四、一句话总结：OPPO 下一步具体怎么赢</h2>
+ <div class="leadbox"><b>不要复制小米的“科技新奇感”，而要把 Find X10 变成“消费者最容易理解、最容易验证的真实影像旗舰”。</b></div>
+ <div class="grid-2" style="margin-top:16px">
+  <div class="card section-card" style="padding:20px"><h3 style="margin-top:0">Find X10</h3><p><b>占领：</b>“6000 元左右，一次把影像、续航、存储配齐。”</p><p><b>主证据：</b>双 2 亿 + 8000mAh + 5999 元 512GB。</p><p><b>传播禁区：</b>不要只喊 2 亿，因为小米也是双 2 亿。</p></div>
+  <div class="card section-card" style="padding:20px"><h3 style="margin-top:0">Find X10 Pro Max</h3><p><b>占领：</b>“照片视频双满配的全焦段影像旗舰。”</p><p><b>主证据：</b>三 2 亿 + 17 档主摄 + 全焦段 8K + 8999 元 1TB。</p><p><b>传播禁区：</b>不要和 8500mAh / 100W 做纯数字续航对打。</p></div>
+ </div>
+ <div class="callout"><b>最终交付不应该是一堆竞品信息，而应该是一条判断链：</b>市场在涨价 → 用户更谨慎 → 小米用科技感制造注意 → OPPO 用真实影像与同预算完整度建立购买理由 → 内容用实拍证明 → 电商用高存储/免息/换新完成转化。</div>
+</section>
+
+<section id="sources" class="card section-card">
+ <div class="kicker">Sources & Reliability</div><h2>十五、数据来源与可信度</h2>
+ <p class="sub">A = 官方 / 一手机构；B = 主流科技媒体基于发布会或官方信息；C = 渠道活动或第三方行业观察，仅作方向性参考。</p>
+ <ol class="source-list">
+  <li><span class="grade a">A</span>OPPO Find X10 官方产品页：<a href="https://www.oppo.com/cn/smartphones/series-find-x/find-x10/" target="_blank">https://www.oppo.com/cn/smartphones/series-find-x/find-x10/</a></li>
+  <li><span class="grade a">A</span>OPPO Find X10 官方规格页：<a href="https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/" target="_blank">https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/</a></li>
+  <li><span class="grade a">A</span>OPPO Find X10 Pro Max 官方产品页：<a href="https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/" target="_blank">https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/</a></li>
+  <li><span class="grade a">A</span>OPPO Find X10 Pro Max 官方规格页：<a href="https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/" target="_blank">https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/</a></li>
+  <li><span class="grade a">A</span>IDC：中国智能手机市场 Q2 2026：<a href="https://www.idc.com/resource-center/blog/china-smartphone-market-decline-q2-2026/" target="_blank">https://www.idc.com/resource-center/blog/china-smartphone-market-decline-q2-2026/</a></li>
+  <li><span class="grade a">A</span>Counterpoint：中国 Q2 2026 市场：<a href="https://china.counterpointresearch.com/2026-%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%BA%A6%E4%B8%AD%E5%9B%BD%E6%99%BA%E8%83%BD%E6%89%8B%E6%9C%BA%E5%87%BA%E8%B4%A7%E9%87%8F%E5%90%8C%E6%AF%94%E4%B8%8B%E9%99%8D%E7%99%BE%E5%88%86%E4%B9%8B-2/" target="_blank">Counterpoint 中国 2026 Q2</a></li>
+  <li><span class="grade b">B</span>小米 18 Pro 发布与价格 / 核心参数（IT之家）：<a href="https://www.ithome.com/0/100/6426.htm" target="_blank">https://www.ithome.com/0/100/6426.htm</a></li>
+  <li><span class="grade b">B</span>小米 18 Pro Max 发布与价格（IT之家）：<a href="https://www.ithome.com/1/006/425.htm" target="_blank">https://www.ithome.com/1/006/425.htm</a></li>
+  <li><span class="grade b">B</span>小米 18 Pro 系列双 2 亿影像规格（IT之家）：<a href="https://www.ithome.com/0/100/5526.htm" target="_blank">https://www.ithome.com/0/100/5526.htm</a></li>
+  <li><span class="grade b">B</span>小米 18 Pro 系列长焦规格（IT之家）：<a href="https://www.ithome.com/1/005/642.htm" target="_blank">https://www.ithome.com/1/005/642.htm</a></li>
+  <li><span class="grade b">B</span>OPPO Find X10 系列价格与开售（IT之家）：<a href="https://www.ithome.com/1/006/564.htm" target="_blank">https://www.ithome.com/1/006/564.htm</a></li>
+  <li><span class="grade b">B</span>OPPO Find X10 Pro Max 发布信息（IT之家）：<a href="https://www.ithome.com/0/100/5943.htm" target="_blank">https://www.ithome.com/0/100/5943.htm</a></li>
+  <li><span class="grade b">B</span>Counterpoint 高端市场报告经 IT之家转述：<a href="https://www.ithome.com/0/985/948.htm" target="_blank">https://www.ithome.com/0/985/948.htm</a></li>
+  <li><span class="grade c">C</span>OPPO 京东首发权益公开信息：<a href="https://www.ithome.com/1/006/314.htm" target="_blank">https://www.ithome.com/1/006/314.htm</a></li>
+  <li><span class="grade c">C</span>小米京东首发权益公开信息：<a href="https://finance.sina.com.cn/jjxw/2026-09-23/doc-inisusyf8512058.shtml" target="_blank">https://finance.sina.com.cn/jjxw/2026-09-23/doc-inisusyf8512058.shtml</a></li>
+  <li><span class="grade c">C</span>首销第三方观察经新浪财经转述：<a href="https://finance.sina.com.cn/jjxw/2026-09-29/doc-initpatz6156557.shtml" target="_blank">https://finance.sina.com.cn/jjxw/2026-09-29/doc-initpatz6156557.shtml</a></li>
+ </ol>
+ <div class="note"><b>研究边界：</b>本报告没有将公开网络上无法稳定核验的小红书“爆文数”、抖音“真实转化率”、门店绝对销量等写成事实。若用于企业正式 GTM 决策，下一步应接入品牌自有搜索词、广告后台、京东/天猫/抖音店铺漏斗、达人投放数据与消费者访谈，对这里的策略假设做二次验证。</div>
+</section>
+
+<div class="footer">OPPO Find X10 系列竞品分析｜公开信息快照 2026-10-05｜用于新品上市与卖点定位研究</div>
+</main>
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">↑</button>
+<button class="print-btn" onclick="window.print()">打印 / 导出 PDF</button>
+<script>
+const links=[...document.querySelectorAll('.nav-inner a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(a=>a.classList.remove('active'));
+      const a=links.find(x=>x.getAttribute('href')==='#'+e.target.id);
+      if(a) a.classList.add('active');
+    }
+  });
+},{rootMargin:'-25% 0px -65% 0px',threshold:0});
+secs.forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>

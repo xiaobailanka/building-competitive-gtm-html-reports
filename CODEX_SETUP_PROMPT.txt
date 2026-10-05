@@ -1,0 +1,32 @@
+请安装并验证我提供的 Skill 包 `building-competitive-gtm-html-reports`。
+
+目标：以后当我要求做“新品上市 / GTM / 卖点定位 / 竞品分析 / 渠道内容 / 转化链路”时，Codex 应优先调用这个 Skill，并最终输出一个可本地直接打开的单文件 HTML 报告。报告的分析范式、信息密度、视觉排版、颜色、卡片、表格、Journey、GTM Matrix、数据来源分级等，应与包内 `assets/golden-example-oppo-find-x10-vs-xiaomi18.html` 保持一致的设计语言。
+
+请按以下步骤执行：
+
+1. 解压 ZIP，保持顶层目录名为 `building-competitive-gtm-html-reports`。
+2. 将整个目录安装到当前 Codex 环境可识别的 Skills 目录。优先使用当前环境的标准 Skill 安装位置；如果支持跨运行时目录，可使用 `~/.agents/skills/`。不要只复制 SKILL.md，必须保留 `references/`、`assets/`、`scripts/`、`tests/`。
+3. 阅读 `SKILL.md`，然后阅读其列出的所有 required supporting files。
+4. 检查 golden example，但必须把它当作“分析与设计标准”，不能把 OPPO / 小米的旧事实带进其他项目。
+5. 运行：
+   `python scripts/validate_report.py assets/golden-example-oppo-find-x10-vs-xiaomi18.html`
+   如果出现 error，请修复 Skill 包或说明环境问题；不能忽略。
+6. 运行一个 scaffold smoke test：
+   `python scripts/scaffold_report.py /tmp/competitive-report-smoke.html --title "Competitive Report Smoke Test"`
+   然后运行 `python scripts/validate_report.py /tmp/competitive-report-smoke.html --allow-scaffold` 检查草稿壳。
+   再不带 `--allow-scaffold` 运行一次，应拒绝未完成草稿。草稿模式通过不等于成品验收通过。
+7. 使用 `tests/acceptance-scenarios.md` 中至少 3 个场景进行 Skill 行为测试，重点确认：
+   - 不把 rumor 当事实；
+   - 不做不等价 SKU 的伪比较；
+   - 不编造小红书/抖音转化和热度；
+   - 最终一定输出判断、GTM 动作、KPI 和测试计划；
+   - HTML 视觉体系与 golden example 一致。
+8. 如果测试暴露 Skill 指令漏洞，请修改 Skill 文档后重新测试，直到满足验收要求。
+9. 最后告诉我：安装路径、验证结果、发现并修复了哪些问题，以及以后我应当怎样一句话调用这个 Skill。
+
+额外要求：
+- 数据必须有来源并标记可靠性。
+- 时间敏感信息必须重新搜索核验。
+- 输出必须是 UTF-8 单 HTML，核心渲染不依赖外部 CDN。
+- 必须保留 responsive、sticky nav、print/export、Sources & Reliability。
+- 不要向我输出或声称暴露模型的私有 chain-of-thought；使用包内 `production-method.md` 的可复现方法论即可。
